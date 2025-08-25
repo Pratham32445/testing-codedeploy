@@ -1,24 +1,20 @@
 import express from "express";
 import dotenv from "dotenv";
 
-
 dotenv.config();
+
+console.log(process.env.PORT);
 
 const app = express();
 
+
 app.get("/",(req,res) => {
     res.status(201).json({
-        message : "API WORKING"
+        message : "Hello"
     })
 })
 
-app.post("/get",(req,res) => {
-    const data = [1,2,3];
-    res.status(201).json({
-        message : data
-    })
-})
 
 app.listen(process.env.PORT,() => {
-    console.log("api is working");
+    console.log("server running")
 })

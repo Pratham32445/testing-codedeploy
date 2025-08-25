@@ -1,52 +1,36 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
 # Logs
-logs
-*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
+*.log
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Dependency directories
-node_modules/
-
-# Vite build output
-dist/
-
-# Coverage directory
-coverage/
-
-# IDE settings
-.vscode/
-.idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# Env files
+# Environment variables
 .env
+.env.local
 .env.*.local
 
-# Mac system files
+# OS files
 .DS_Store
+Thumbs.db
 
-# AWS CodeDeploy related temp files
-appspec.yml.bak
-codedeploy*.zip
-
-# PM2 logs and dumps
+# PM2 logs & dumps
 .pm2/logs/
 .pm2/pids/
-dump.pm2
+.pm2/dump.pm2
 
-# Optional: Ignore local debug/test files
-*.local.js
-*.local.ts
+# IDE/editor folders
+.vscode/
+.idea/
+*.swp
+
+# AWS CodeDeploy/CodePipeline artifacts
+*.tar.gz
+*.zip
